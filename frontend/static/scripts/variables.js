@@ -37,10 +37,5 @@ const checkScore = (array) => {
             break;
         }
     }
-    if (allGrids.length === 9 && !multipleExist) {
-        setTimeout(() => alert(`It's a draw!!!`), 500);
-        setTimeout(() => location.reload(), 500);
-    }
-
     return multipleExist;
 };

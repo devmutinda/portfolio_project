@@ -51,6 +51,10 @@ const processChoice = (elem) => {
             setTimeout(() => alert(`${currentPlayer.name} won!!!`), 500);
             setTimeout(() => location.reload(), 500);
         }
+        else if (allGrids.length === 9 && !result) {
+            setTimeout(() => alert(`It's a draw!!!`), 500);
+            setTimeout(() => location.reload(), 500);
+        }
         else if (currentPlayer === P1) {
             currentPlayer = eval(getValue);
             if (currentPlayer === AI) {
@@ -71,7 +75,6 @@ const processAI = () => {
     while (allGrids.includes(choice)) {
         choice = String(Math.floor(Math.random() * 9));
     }
-    // console.log(choice);
     processChoice(choice);
 
 };
