@@ -1,0 +1,19 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    /* background-color: blue; */
+    border-top: solid 1px gainsboro;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(80, 79, 79);;
+    line-height: 60px;
+    display: none;
+
+}
+
+.ul-footer li {
+    display: inline;
+    padding: 0 20px;
+}
